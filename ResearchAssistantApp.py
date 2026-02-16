@@ -2,7 +2,16 @@
 # ResearchAssistantApp.py
 
 # --- Imports ---
-import re, time, requests, fitz
+import re, time, requests
+
+# Safe import for PyMuPDF
+try:
+    import fitz  # PyMuPDF
+except ModuleNotFoundError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pymupdf"])
+    import fitz
+
 from urllib.parse import urlparse, urlunparse
 from ddgs import DDGS
 from bs4 import BeautifulSoup
