@@ -3,6 +3,6 @@ numpy
 requests
 beautifulsoup4
 sentence-transformers
-ddgs
+duckduckgo-search
 torch
 pymupdf
