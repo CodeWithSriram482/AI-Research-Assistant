@@ -4,4 +4,4 @@ requests
 bs4
 sentence-transformers
 ddgs
-PyMuPDF
+pymupdf
