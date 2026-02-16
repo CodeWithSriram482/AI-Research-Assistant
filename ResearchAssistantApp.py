@@ -161,7 +161,7 @@ class ResearchAgent:
             else:
                 title, url_resolved = p['title'], p['url']
             key = re.sub(r'[^a-zA-Z0-9]', '', title)[:40]
-            bib_entries.append(f"""@misc{{{key},
+            bib_entries.append(rf"""@misc{{{key},
   title = {{{{ {title} }}}},
   howpublished = {{{{\url{{{url_resolved}}}}}}}, 
   year = {{2026}}
