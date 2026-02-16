@@ -4,4 +4,12 @@ requests
 bs4
 sentence-transformers
 ddgs
-pymupdf
+import re, time, requests
+
+try:
+    import fitz  # PyMuPDF
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pymupdf"])
+    import fitz
+
