@@ -1,15 +1,8 @@
 streamlit
 numpy
 requests
-bs4
+beautifulsoup4
 sentence-transformers
 ddgs
-import re, time, requests
-
-try:
-    import fitz  # PyMuPDF
-except ImportError:
-    import subprocess, sys
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "pymupdf"])
-    import fitz
-
+torch
+pymupdf
